@@ -1,0 +1,90 @@
+import Navbar from "../../../component/nav";
+import { useRouter } from "next/router";
+
+export default function DetailPost({post}){
+    const router = useRouter()
+    if(router.isFallback){
+        return <h1>Loading......</h1>
+    }
+    return(
+        <div>
+            <Navbar/>
+            <h1>Detail Post falback true</h1>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Content</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Id : {post.id}</td> 
+                    </tr>
+
+                    <tr>
+                        <td>Title : {post.title}</td>
+                    </tr>
+
+                    <tr>
+                        <td>{post.body}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    )
+}
+
+// export async function getStaticPaths() {
+//     return {
+//       paths: [
+//         { params: { detailpost: '1' } },
+//         { params: { detailpost: '2' } },
+//         { params: { detailpost: '3' } },
+//         { params: { detailpost: '4' } },
+//       ],
+//       fallback: false,
+//     }
+//   }
+
+export async function getStaticPaths(){
+    // const response = await fetch('https://jsonplaceholder.typicode.com/posts')
+    // const data = await response.json()
+
+    // const paths = data.map(post =>{
+    //     return{
+    //         params: {
+    //             detailpost: `${post.id}`
+    //         }
+    //     }
+    // })
+
+    return{
+        paths: [
+            { params: {detailpost: '1'} },
+            { params: {detailpost: '2'} },
+            { params: {detailpost: '3'} },
+            { params: {detailpost: '4'} },
+        ],
+        // paths,
+        fallback: true,
+    }
+}
+
+export async function getStaticProps(context){
+    const { params } = context
+    const response = await fetch(`https://jsonplaceholder.typicode.com/posts/${params.detailpost}`)
+    const data = await response.json()
+
+    if(!data.id){
+        return{
+            notFound: true,
+        }
+    }
+
+    return {
+        props: {
+            post: data
+        },
+    }
+}

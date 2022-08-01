@@ -1,0 +1,139 @@
+{
+    "events":[
+        {
+            "id": 1,
+            "title": "Event 1",
+            "description": "Description 1",
+            "category": "sports",
+            "date": "April 25"
+        },
+        {
+            "id": 2,
+            "title": "Event 2",
+            "description": "Description 2",
+            "category": "art",
+            "date": "January 25"
+        },
+        {
+            "id": 3,
+            "title": "Event 3",
+            "description": "Description 3",
+            "category": "technology",
+            "date": "April 25"
+        },
+        {
+            "id": 4,
+            "title": "Event 4",
+            "description": "Description 4",
+            "category": "technology",
+            "date": "June 25"
+        },
+        {
+            "id": 5,
+            "title": "Event 5",
+            "description": "Description 5",
+            "category": "food",
+            "date": "April 25"
+        },
+        {
+            "id": 6,
+            "title": "Event 6",
+            "description": "Description 6",
+            "category": "technology",
+            "date": "February 25"
+        },
+        {
+            "id": 7,
+            "title": "Event 7",
+            "description": "Description 7",
+            "category": "art",
+            "date": "April 25"
+        },
+        {
+            "id": 8,
+            "title": "Event 8",
+            "description": "Description 8",
+            "category": "sports",
+            "date": "April 25"
+        },
+        {
+            "id": 9,
+            "title": "Event 9",
+            "description": "Description 9",
+            "category": "sports",
+            "date": "June 24"
+        },
+        {
+            "id": 10,
+            "title": "Event 10",
+            "description": "Description 10",
+            "category": "art",
+            "date": "April 23"
+        }
+    ],
+    "products": [
+        {
+            "id": 1,
+            "title": "Product 1st",
+            "price": 7000,
+            "description": "Description 1"
+        },
+        {
+            "id": 2,
+            "title": "Product 2",
+            "price": 2000,
+            "description": "Description 2"
+        },
+        {
+            "id": 3,
+            "title": "Product 3",
+            "price": 3050,
+            "description": "Description 3"
+        },
+        {
+            "id": 4,
+            "title": "Product 4",
+            "price": 4000,
+            "description": "Description 4"
+        },
+        {
+            "id": 5,
+            "title": "Product 5",
+            "price": 5000,
+            "description": "Description 5"
+        }
+    ],
+    "news": [
+        {
+            "idnews": 1,
+            "newstitle": "Mandalika GP 1",
+            "description": "Mauris enim tortor, ullamcorper vitae scelerisque quis, dictum ac tellus. Nam maximus ligula ac blandit viverra. Integer varius dictum mauris nec porttitor. Nam vulputate nunc nunc, non posuere mauris posuere non. Aenean tortor ex, faucibus sed nisi in, finibus tincidunt sem. Nulla vitae feugiat erat. Vestibulum dictum bibendum consectetur. Nunc arcu risus, mattis in leo sed, tincidunt venenatis quam. Vestibulum at nibh egestas, pulvinar magna vel, finibus eros. Etiam dignissim mollis dolor a imperdiet. Phasellus aliquet ex metus, nec suscipit dui commodo in.",
+            "category": "sports"
+        },
+        {
+            "idnews": 2,
+            "newstitle": "G20 Bali 2",
+            "description": "Description 2",
+            "category": "politics"
+        },
+        {
+            "idnews": 3,
+            "newstitle": "Mandalika GT World Challenge 3",
+            "description": "Description 3",
+            "category": "sports"
+        },
+        {
+            "idnews": 4,
+            "newstitle": "Politic 4",
+            "description": "Description 4",
+            "category": "politics"
+        }
+    ],
+    "dashboard": {
+        "posts": 5,
+        "likes": 170,
+        "followers": 20,
+        "following": 590
+    }
+    
+}
